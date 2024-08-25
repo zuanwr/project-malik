@@ -4,20 +4,22 @@
   box-sizing: border-box;
   // background-color: blue;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: whitesmoke;
-//   min-height: 3000vh;
+  background-color: lightgray;
+  //   min-height: 3000vh;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10%;
+  padding: 10px 15%;
   background-color: white;
-    box-shadow:gray 1px 1px 15px 1px;
-    // z-index: 999;
-    position: fixed;
+  box-shadow: gray 1px 1px 15px 1px;
+  // z-index: 999;
+  position: fixed;
+  width: 100%;
   .logo {
     display: flex;
     justify-content: center;
@@ -50,10 +52,10 @@ body {
     background-color: white;
     color: gray;
   }
-  .menu a:hover{
+  .menu a:hover {
     color: deepskyblue;
   }
-  .menu a::after{
+  .menu a::after {
     content: "";
     display: block;
     border-bottom: 2px solid deepskyblue;
@@ -61,12 +63,55 @@ body {
     transition: 0.2s;
     padding-bottom: 0.5rem;
   }
-  .menu a:hover::after{
+  .menu a:hover::after {
     transform: scaleX(0.9);
   }
   .box-icon a {
     font-size: 20px;
     color: black;
     background-color: white;
+  }
+}
+
+.hiro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  height: 50vw;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 10px 10%;
+    width: 85%;
+  }
+  .conten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-right: 80px;
+    font-size: 20px;
+  }
+  .title p {
+    max-width: 1000px;
+    line-height: 1.5;
+    padding-top: 1rem;
+    font-weight: 200;
+  }
+  .hiro-img {
+    // width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    border-radius: 20px;
   }
 }
