@@ -7,7 +7,7 @@
 }
 body {
   background-color: whitesmoke;
-//   min-height: 3000vh;
+  //   min-height: 3000vh;
 }
 .navbar {
   display: flex;
@@ -15,9 +15,10 @@ body {
   justify-content: space-between;
   padding: 10px 10%;
   background-color: white;
-    box-shadow:gray 1px 1px 15px 1px;
-    // z-index: 999;
-    position: fixed;
+  box-shadow: gray 1px 1px 15px 1px;
+  // z-index: 999;
+  position: fixed;
+  width: 100%;
   .logo {
     display: flex;
     justify-content: center;
@@ -42,18 +43,74 @@ body {
   }
   .menu {
     font-size: 20px;
-    display: flex;
     gap: 50px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    overflow: hidden;
   }
   .menu a {
     background-color: white;
     color: gray;
   }
-  .menu a:hover{
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    // display: flex;
+  }
+  button {
+    border: none;
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: gray;
+    // padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+
+  }
+
+  //   .navbar a:hover, .dropdown:hover .dropbtn {
+  //     background-color: blue;
+  //   }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    // background-color: red;
+    border-radius: 20px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top:0.2rem;
+    border-radius: 20px;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: whitesmoke;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .menu a:hover {
     color: deepskyblue;
   }
-  .menu a::after{
+  .menu a::after {
     content: "";
     display: block;
     border-bottom: 2px solid deepskyblue;
@@ -61,7 +118,21 @@ body {
     transition: 0.2s;
     padding-bottom: 0.5rem;
   }
-  .menu a:hover::after{
+  .menu a:hover::after {
+    transform: scaleX(0.9);
+  }
+  .dropbtn:hover {
+    color: deepskyblue;
+  }
+  .dropbtn::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid deepskyblue;
+    transform: scaleX(0);
+    transition: 0.2s;
+    padding-bottom: 0.5rem;
+  }
+  .dropbtn:hover::after {
     transform: scaleX(0.9);
   }
   .box-icon a {
