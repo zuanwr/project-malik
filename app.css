@@ -49,10 +49,6 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-.navbar .menu a {
-  background-color: white;
-  color: gray;
-}
 .navbar .dropdown {
   float: left;
   overflow: hidden;
@@ -93,6 +89,10 @@ body {
 }
 .navbar .dropdown:hover .dropdown-content {
   display: block;
+}
+.navbar .menu a {
+  background-color: white;
+  color: gray;
 }
 .navbar .menu a:hover {
   color: deepskyblue;
@@ -166,7 +166,6 @@ body {
 .hiro img {
   width: 50vh;
   height: 50vh;
-  position: relative;
   border-radius: 20px;
 }
 
