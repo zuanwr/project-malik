@@ -230,6 +230,17 @@
   width: 100%;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.185);
+  position: relative;
+  border-radius: 5px;
+}
+.cards .diskon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
 }
 .cards a {
   color: black;
