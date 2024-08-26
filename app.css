@@ -13,8 +13,9 @@
   padding: 5px 15%;
   background-color: white;
   box-shadow: gray 1px 1px 15px 1px;
-  position: fixed;
-  width: 100%;
+  z-index: 999;
+  top: 0;
+  position: sticky;
 }
 .navbar .logo {
   display: flex;
@@ -129,9 +130,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
   height: 50vw;
-  background-color: whitesmoke;
+  background-color: #E8E8E8;
 }
 .hiro .title {
   display: flex;
@@ -148,6 +148,10 @@
   align-items: baseline;
   padding-right: 80px;
   font-size: 20px;
+}
+.hiro h6 {
+  font-size: 15px;
+  font-weight: 200;
 }
 .hiro .title p {
   max-width: 1000px;
@@ -178,6 +182,78 @@
 .about h2 {
   padding-bottom: 2rem;
   text-align: center;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8E8E8;
+  width: 100%;
+  height: 100vh;
+}
+.cards .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards .conten {
+  text-align: center;
+  width: 90%;
+  line-height: 3;
+}
+.cards h2 {
+  font-size: 30px;
+}
+.cards .paket-travel {
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .product-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 15%;
+  gap: 20px;
+}
+.cards .img:hover {
+  box-shadow: 0px 5px 10px black;
+  transition: 0.2s;
+}
+.cards h3 {
+  font-size: 16px;
+}
+.cards .img {
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+}
+.cards a {
+  color: black;
+}
+.cards img {
+  width: 279px;
+  height: 200px;
+}
+.cards .btn {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  padding: 5px;
+  font-weight: 200;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+.cards h4 {
+  font-weight: 200;
+}
+.cards .btn:hover {
+  transform: scale(1.05);
+  border-color: rgba(0, 0, 255, 0.473);
+  color: rgba(0, 0, 255, 0.829);
 }
 
 /*# sourceMappingURL=app.css.map */

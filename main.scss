@@ -6,9 +6,7 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
-body {
-  // background-color: whitesmoke;
-}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -16,9 +14,9 @@ body {
   padding: 5px 15%;
   background-color: white;
   box-shadow: gray 1px 1px 15px 1px;
-  // z-index: 999;
-  position: fixed;
-  width: 100%;
+  z-index: 999;
+  top: 0;
+  position: sticky;
   .logo {
     display: flex;
     justify-content: center;
@@ -146,9 +144,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  // padding-top: 10rem;
   height: 50vw;
-  background-color: whitesmoke;
+  background-color: #E8E8E8;
   .title {
     display: flex;
     justify-content: center;
@@ -164,6 +162,10 @@ body {
     align-items: baseline;
     padding-right: 80px;
     font-size: 20px;
+  }
+  h6{
+    font-size: 15px;
+    font-weight: 200;
   }
   .title p {
     max-width: 1000px;
@@ -195,6 +197,87 @@ body {
   h2 {
     padding-bottom: 2rem;
     text-align: center;
+    font-size: 30px;
   }
 }
 
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8E8E8;
+  width: 100%;
+  height: 100vh;
+  .product {
+    display: flex;
+    flex-direction: column;
+    // padding: 2rem 15%;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .conten{
+    text-align: center;
+    width: 90%;
+    line-height: 3;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .paket-travel{
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem 15%;
+    gap: 20px;
+  }
+  .img:hover {
+    box-shadow:  0px  5px 10px black ;
+    transition: 0.2s;
+
+  }
+  h3{
+    font-size: 16px;
+  }
+  .img{
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    // padding: 10px;
+    // border-radius: 10px;    
+    // align-items: center;
+    // justify-content: center;
+  }
+  a{
+    color: black;
+  }
+  img{
+    width: 279px;
+    height: 200px;
+    // border-radius: 10px;
+  }
+  .btn{
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 5px;
+    font-weight: 200;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 10px;
+  }
+  h4{
+    font-weight: 200;
+  }
+  .btn:hover{
+    transform: scale(1.05);
+    // box-shadow: 0 0 10px rgba(0, 0, 255, 0.377);
+    border-color: rgba(0, 0, 255, 0.473);
+    color: rgba(0, 0, 255, 0.829);
+  }
+}
