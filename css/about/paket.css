@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15%;
+  background-color: white;
+  box-shadow: gray 1px 1px 15px 1px;
+  z-index: 999;
+  top: 0;
+  position: sticky;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.navbar .logo-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.navbar h2 {
+  line-height: 1;
+}
+.navbar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 90%;
+}
+.navbar .menu {
+  font-size: 20px;
+  gap: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.navbar button {
+  border: none;
+}
+.navbar .dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: gray;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 20px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 0.2rem;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbar .dropdown-content a:hover {
+  background-color: whitesmoke;
+}
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar .menu a {
+  background-color: white;
+  color: gray;
+}
+.navbar .menu a:hover {
+  color: deepskyblue;
+}
+.navbar .menu a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid deepskyblue;
+  transform: scaleX(0);
+  transition: 0.2s;
+  padding-bottom: 0.5rem;
+}
+.navbar .menu a:hover::after {
+  transform: scaleX(0.9);
+}
+.navbar .dropbtn:hover {
+  color: deepskyblue;
+}
+.navbar .dropbtn::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid deepskyblue;
+  transform: scaleX(0);
+  transition: 0.2s;
+  padding-bottom: 0.5rem;
+}
+.navbar .dropbtn:hover::after {
+  transform: scaleX(0.9);
+}
+.navbar .box-icon a {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cards .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards .conten {
+  text-align: center;
+  width: 90%;
+  line-height: 2;
+  width: 60%;
+}
+.cards h2 {
+  font-size: 30px;
+}
+.cards .paket-travel {
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .product-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 15%;
+  gap: 20px;
+}
+.cards .img:hover {
+  transition: 0.4s;
+  transform: translateY(-9px);
+}
+.cards h3 {
+  font-size: 16px;
+}
+.cards .img {
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  position: relative;
+  border-radius: 5px;
+}
+.cards .diskon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.cards .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.cards .btns .order {
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.cards a {
+  color: black;
+}
+.cards img {
+  width: 279px;
+  height: 200px;
+}
+.cards .btn {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  padding: 5px;
+  font-weight: 200;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+.cards h4 {
+  font-weight: 200;
+}
+.cards .btn:hover {
+  transform: scale(1.05);
+  border-color: rgba(0, 0, 255, 0.473);
+  color: rgba(0, 0, 255, 0.829);
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  background-color: #180161;
+}
+.footer .footer-content {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 0;
+}
+.footer h1 {
+  height: 90px;
+}
+.footer .information p {
+  font-size: 15px;
+  font-weight: 200;
+}
+.footer .social-icon a {
+  font-size: 30px;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.2em 0.3rem;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  margin-top: 42px;
+  transition: 0.2s ease;
+}
+.footer .social-icon a:hover {
+  color: #180161;
+  box-shadow: 0 0 10px;
+  transform: scale(1.1) translateY(-3px);
+  background-color: white;
+}
+.footer .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+  font-size: 15px;
+  gap: 19px;
+  margin-top: 10px;
+}
+.footer .img p {
+  font-weight: 200;
+}
+.footer img {
+  width: 200px;
+  height: 100px;
+}
+.footer .link a {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 2;
+  color: white;
+}
+.footer .alamat {
+  font-size: 15px;
+  font-weight: 200;
+}
+.footer .kantor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
+}
+
+/*# sourceMappingURL=paket.css.map */
