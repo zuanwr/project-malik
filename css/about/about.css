@@ -126,7 +126,25 @@
   background-color: white;
 }
 
-.cards {
+.about {
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .content {
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+.about h2 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+}
+.about .cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,47 +152,47 @@
   width: 100%;
   height: 100vh;
 }
-.cards .product {
+.about .cards .product {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cards .conten {
+.about .cards .conten {
   text-align: center;
   width: 90%;
   line-height: 3;
 }
-.cards h2 {
+.about .cards h2 {
   font-size: 30px;
 }
-.cards .paket-travel {
+.about .cards .paket-travel {
   gap: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cards .product-img {
+.about .cards .product-img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 2rem 15%;
   gap: 20px;
 }
-.cards .img:hover {
+.about .cards .img:hover {
   transition: 0.4s;
   transform: translateY(-9px);
 }
-.cards h3 {
+.about .cards h3 {
   font-size: 16px;
 }
-.cards .img {
+.about .cards .img {
   width: 100%;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.185);
   position: relative;
   border-radius: 5px;
 }
-.cards .diskon {
+.about .cards .diskon {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -183,7 +201,7 @@
   border-radius: 5px;
   padding: 5px;
 }
-.cards .btns {
+.about .cards .btns {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,21 +209,21 @@
   padding: 10px;
   cursor: pointer;
 }
-.cards .btns .order {
+.about .cards .btns .order {
   background-color: orangered;
   color: white;
   padding: 5px;
   border-radius: 5px;
   transition: 0.2s;
 }
-.cards a {
+.about .cards a {
   color: black;
 }
-.cards img {
+.about .cards img {
   width: 279px;
   height: 200px;
 }
-.cards .btn {
+.about .cards .btn {
   border: 1px solid rgba(0, 0, 0, 0.274);
   padding: 5px;
   font-weight: 200;
@@ -214,10 +232,10 @@
   transition: 0.2s;
   border-radius: 10px;
 }
-.cards h4 {
+.about .cards h4 {
   font-weight: 200;
 }
-.cards .btn:hover {
+.about .cards .btn:hover {
   transform: scale(1.05);
   border-color: rgba(0, 0, 255, 0.473);
   color: rgba(0, 0, 255, 0.829);
