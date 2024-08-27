@@ -341,10 +341,16 @@ input {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  transition: 0.3s;
 }
 
 .send a {
   color: white;
+}
+
+.send:hover {
+  color: crimson;
+  transform: scale(1.1) translateY(-1px);
 }
 
 .Contact {
@@ -366,33 +372,47 @@ input {
 .social {
   font-size: 20px;
   color: white;
+  width: 80%;
+  margin: auto;
 }
-
-.map {
+.social .map {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+  line-height: 1.5;
+}
+.social .email {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
-
-.email {
+.social .no-hp {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.no-hp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
 .social-icon a {
   font-size: 30px;
   color: white;
-  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0.2em 0.3rem;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  transition: 0.2s ease;
+}
+
+.social-icon a:hover {
+  color: crimson;
+  box-shadow: 0 0 10px;
+  transform: scale(1.1) translateY(-3px);
+  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
