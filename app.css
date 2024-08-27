@@ -72,6 +72,7 @@
   z-index: 1;
   margin-top: 0.2rem;
   border-radius: 20px;
+  font-size: 14px;
 }
 .navbar .dropdown-content a {
   float: none;
@@ -291,8 +292,9 @@
   height: 100vh;
 }
 
-h1 {
+h2 {
   margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .section-conten {
@@ -413,6 +415,82 @@ input {
   box-shadow: 0 0 10px;
   transform: scale(1.1) translateY(-3px);
   background-color: white;
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  background-color: #180161;
+}
+.footer .footer-content {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 0;
+}
+.footer h1 {
+  height: 90px;
+}
+.footer .information p {
+  font-size: 15px;
+  font-weight: 200;
+}
+.footer .social-icon a {
+  font-size: 30px;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.2em 0.3rem;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  margin-top: 42px;
+  transition: 0.2s ease;
+}
+.footer .social-icon a:hover {
+  color: #180161;
+  box-shadow: 0 0 10px;
+  transform: scale(1.1) translateY(-3px);
+  background-color: white;
+}
+.footer .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+  font-size: 15px;
+  gap: 19px;
+  margin-top: 10px;
+}
+.footer .img p {
+  font-weight: 200;
+}
+.footer img {
+  width: 200px;
+  height: 100px;
+}
+.footer .link a {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 2;
+  color: white;
+}
+.footer .alamat {
+  font-size: 15px;
+  font-weight: 200;
+}
+.footer .kantor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 23px;
 }
 
 /*# sourceMappingURL=app.css.map */

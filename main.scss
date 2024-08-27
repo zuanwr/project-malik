@@ -82,6 +82,7 @@
     z-index: 1;
     margin-top: 0.2rem;
     border-radius: 20px;
+    font-size: 14px;
   }
 
   .dropdown-content a {
@@ -95,6 +96,7 @@
 
   .dropdown-content a:hover {
     background-color: whitesmoke;
+    // transform: scale(1.1) translateX(-1px);
   }
 
   .dropdown:hover .dropdown-content {
@@ -120,6 +122,7 @@
   }
   .dropbtn:hover {
     color: deepskyblue;
+    
   }
   .dropbtn::after {
     content: "";
@@ -311,8 +314,9 @@
   width: 100%;
   height: 100vh;
 }
-h1 {
+h2 {
   margin-bottom: 30px;
+  font-size: 30px;
 }
 .section-conten {
   display: flex;
@@ -386,7 +390,6 @@ input {
   padding: 20px;
   line-height: 3;
   // width: 70%;
-
 }
 .social {
   font-size: 20px;
@@ -434,4 +437,82 @@ input {
   box-shadow: 0 0 10px;
   transform: scale(1.1) translateY(-3px);
   background-color: white;
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  background-color: #180161;
+
+  .footer-content {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 0;
+  }
+  h1 {
+    height: 90px;
+  }
+  .information p {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .social-icon a {
+    font-size: 30px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.2em 0.3rem;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    margin-top: 42px;
+    transition: 0.2s ease;
+  }
+  .social-icon a:hover {
+    color: #180161;
+    box-shadow: 0 0 10px;
+    transform: scale(1.1) translateY(-3px);
+    background-color: white;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 15px;
+    gap: 19px;
+    margin-top: 10px;
+  }
+  .img p {
+    font-weight: 200;
+  }
+  img {
+    width: 200px;
+    height: 100px;
+  }
+  .link a {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 2;
+    color: white;
+  }
+  .alamat {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .kantor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+  }
 }
