@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass" : "sass --watch main.scss app.css",
     "sass2": "sass --watch ./css/about/about.scss ./css/about/about.css",
-    "sass3": "sass --watch ./css/about/paket.scss ./css/about/paket.css"
+    "sass3": "sass --watch ./css/about/paket.scss ./css/about/paket.css",
+    "sass4": "sass --watch ./css/about/viral.scss ./css/about/viral.css"
   },
   "keywords": [],
   "author": "",
