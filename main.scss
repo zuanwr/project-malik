@@ -72,7 +72,6 @@ body {
     font-family: inherit;
     margin: 0;
     cursor: pointer;
-
   }
 
   //   .navbar a:hover, .dropdown:hover .dropbtn {
@@ -87,7 +86,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top:0.2rem;
+    margin-top: 0.2rem;
     border-radius: 20px;
   }
 
@@ -135,9 +134,74 @@ body {
   .dropbtn:hover::after {
     transform: scaleX(0.9);
   }
-  .box-icon a {
+  .box-icon  {
+    display: flex;
     font-size: 20px;
-    color: black;
-    background-color: white;
+    gap: 10px;
   }
+  .box-icon a{
+    color: black;
+  }
+  #ham-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  // html {
+  //   font-size: 15%;
+  // }
+  .navbar {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0 10px ;
+    .menu {
+      display: none;
+      position: static;
+      width: auto;
+      height: auto;
+    }
+    .logo-img h2{
+      font-size: 20px;
+    }
+    .menu a {
+      color: white;
+    font-size: 20px;
+
+      .navbar-menu a::after {
+        content: "";
+      }
+  }
+    .menu a::after {
+      transform-origin: 0 0;
+    }
+    .menu a:hover:after {
+      transform: scaleX(0.2);
+    }
+    #ham-menu{
+      display: block;
+    }
+  }
+}
+/* tablet */
+@media screen and (max-width: 1440px){
+   .navbar {
+     display: flex;
+     position: static;
+     width: auto;
+     height: auto;
+     padding: 0 10px ;
+     .menu {
+      //  display: flex;
+       position: static;
+       width: auto;
+       height: auto;
+       gap: 20px;
+     }
+     .logo-img h2{
+       font-size: 20px;
+     }
+ }
 }

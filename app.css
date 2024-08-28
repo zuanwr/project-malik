@@ -121,10 +121,70 @@ body {
 .navbar .dropbtn:hover::after {
   transform: scaleX(0.9);
 }
-.navbar .box-icon a {
+.navbar .box-icon {
+  display: flex;
   font-size: 20px;
+  gap: 10px;
+}
+.navbar .box-icon a {
   color: black;
-  background-color: white;
+}
+.navbar #ham-menu {
+  display: none;
+}
+
+@media screen and (max-width: 728px) {
+  .navbar {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+  }
+  .navbar .menu {
+    display: none;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .navbar .logo-img h2 {
+    font-size: 20px;
+  }
+  .navbar .menu a {
+    color: white;
+    font-size: 20px;
+  }
+  .navbar .menu a .navbar-menu a::after {
+    content: "";
+  }
+  .navbar .menu a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .menu a:hover:after {
+    transform: scaleX(0.2);
+  }
+  .navbar #ham-menu {
+    display: block;
+  }
+}
+/* tablet */
+@media screen and (max-width: 1440px) {
+  .navbar {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+  }
+  .navbar .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    gap: 20px;
+  }
+  .navbar .logo-img h2 {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
