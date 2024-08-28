@@ -7,15 +7,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-@keyframes slide_animation{
-  0%{
-      transform: translateY(-100px);
+@keyframes slide_animation {
+  0% {
+    transform: translateY(-100px);
   }
-  100%{
-      transform: translateY(0);
+  100% {
+    transform: translateY(0);
   }
 }
-
 
 .navbar {
   display: flex;
@@ -32,7 +31,7 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    animation: slide_animation .5s;
+    animation: slide_animation 0.5s;
   }
   .logo-img {
     width: 100%;
@@ -144,6 +143,15 @@
   .dropbtn:hover::after {
     transform: scaleX(0.9);
   }
+  .box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    #ham-menu {
+      display: none;
+    }
+  }
   .box-icon a {
     font-size: 20px;
     color: black;
@@ -192,7 +200,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color:#F4CE14;
+    background-color: #f4ce14;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -204,7 +212,7 @@
     width: 25vh;
     height: 25vh;
   }
-  .image-absolutee{
+  .image-absolutee {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -552,3 +560,76 @@ input {
     margin-top: 23px;
   }
 }
+
+
+// Media
+@media screen and (max-width: 770px) {
+  section {
+    overflow: hidden;
+  }
+  .navbar {
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+    .box-icon {
+      #ham-menu {
+        display: block;
+      }
+    }
+    .menu {
+      display: none;
+    }
+    .logo-img h2 {
+      font-size: 20px;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    //
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .navbar {
+    padding: 0 10px;
+    width: auto;
+    height: auto;
+    .box-icon {
+      #ham-menu {
+        display: block;
+      }
+    }
+  }
+  .menu {
+    display: none;
+  }
+  .logo-img h2 {
+    font-size: 20px;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .navbar{
+    padding: 0 10px;
+    .logo-img h2{
+    font-size: 20px;
+    }
+    img{
+      width: 80px;
+      height: 80px;
+    }
+    .menu{
+      display: none;
+    }
+    .box-icon{
+      #ham-menu{
+      display: block;
+
+      }
+    }
+  }
+} 
